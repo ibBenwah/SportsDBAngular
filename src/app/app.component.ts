@@ -14,8 +14,6 @@ export class AppComponent {
   title = 'Sports DB';
 
 
-  constructor(
-    private _userService: UserServiceService,
-    public auth: AuthService
-  ){}
+ 
+   
 }
