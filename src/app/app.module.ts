@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {HttpClientModule } from '@angular/common/http';
-import { TaskBarComponent } from './task-bar/task-bar.component'
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HeadderComponent } from './headder/headder.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskBarComponent
+    NavBarComponent,
+    HeadderComponent
   ],
   imports: [
     BrowserModule,
