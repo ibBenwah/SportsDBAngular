@@ -5,14 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {HttpClientModule } from '@angular/common/http';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HeadderComponent } from './headder/headder.component'
+import { HeadderComponent } from './headder/headder.component';
+import { LeagueComponent } from './league/league.component';
+import { PlayerComponent } from './player/player.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { NewsComponent } from './news/news.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    HeadderComponent
+    HeadderComponent,
+    LeagueComponent,
+    PlayerComponent,
+    NavMenuComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
