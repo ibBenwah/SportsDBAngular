@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import {HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HeadderComponent } from './headder/headder.component';
 import { LeagueComponent } from './league/league.component';
 import { PlayerComponent } from './player/player.component';
@@ -23,7 +22,7 @@ import { NewsComponent } from './news/news.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

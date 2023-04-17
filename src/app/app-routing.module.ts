@@ -5,8 +5,8 @@ import { NewsComponent } from './news/news.component';
 import { PlayerComponent } from './player/player.component';
 
 const routes: Routes = [
-  {path: 'league', component: LeagueComponent},
-  {path: 'player', component: PlayerComponent},
+  {path: 'leagues', component: LeagueComponent},
+  {path: 'players', component: PlayerComponent},
   {path: 'news', component: NewsComponent},
   {path: '', component: NewsComponent, pathMatch: 'full'}
 ];

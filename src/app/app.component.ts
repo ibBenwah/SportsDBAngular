@@ -1,5 +1,5 @@
 import { Component, Injectable, Output } from '@angular/core';
-import { User } from './interfaces'
+import { League } from './interfaces/league'
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { User } from './interfaces'
 export class AppComponent {
   currentUserId: String | undefined = ''; 
   userName: string | undefined = '';
-  @Output() user: User = {} as User;
+  @Output() user: League = {} as League;
   title = 'Sports DB';
 
 
