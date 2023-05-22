@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './league.component.html',
   styleUrls: ['./league.component.css']
 })
-export class LeagueComponent implements OnInit {
+export class LeagueComponent {
 
-  constructor() { }
+  leagues: any[] |undefined;
 
-  ngOnInit(): void {
+  constructor(private http: HttpClient) {}
+
+  getLeague(){
+    this.http.get<any[]>('http://api.example.com/leagues').subscribe(
+      (response) => {
+        this.leagues = response;
+      },
+      (error) => {
+        console.error('Error occured while fetching players: ', error);
+      }
+    );
   }
-
 }

@@ -11,12 +11,12 @@ export class SportsDbService {
   
   constructor(private httpClient: HttpClient) { }
 
-  getLeagues =() => {
+  getAllLeagues =() => {
     return this.httpClient.get<League[]>(this.backEndBaseUrl + "/leagues");
   }
 
-  getPlayer = () => {
-    return this.httpClient.get<Player[]>(this.backEndBaseUrl + "/players")
+  getAllPlayers = () => {
+    return this.httpClient.get<League[]>(this.backEndBaseUrl + "/players")
   }
   
 }
