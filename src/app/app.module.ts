@@ -1,28 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { HeadderComponent } from './headder/headder.component';
-import { LeagueComponent } from './league/league.component';
 import { PlayerComponent } from './player/player.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { NewsComponent } from './news/news.component'
+import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeadderComponent,
-    LeagueComponent,
     PlayerComponent,
-    NavMenuComponent,
-    NewsComponent
+    PlayerDetailComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
